@@ -1,0 +1,92 @@
+
+
+.navbar-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.list{
+    display: flex;
+  
+
+   
+}
+.list-item{
+   
+    list-style: none;
+    padding: 0px 10px;
+}
+.button-group{
+    display: flex;
+    flex-wrap: wrap;
+    /* position: relative;
+    margin-left: 350px;
+    margin-top: 12px; */
+
+}
+.nav-button{
+    height: 35px;
+    width: 120px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.hero-container{
+    display: flex;
+    
+}
+.image{
+    position: absolute;
+    margin-top: 10px;
+} 
+.image img{
+    width: 420px;
+    height: 450px;
+
+}
+.square{
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+.star{
+    position: relative;
+    top: 550px;
+    left: 50px;
+}
+.globe{
+    position: relative;
+    left: 280px;
+    height: 80px;
+}
+.hero-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.hero-container-right{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+    margin:0px 145px;
+    width: 500px;
+}
+.hero-heading{
+    font-size: 50px;
+}
+.contact-heading{
+    position: relative;
+    left: 55px;
+}
+.btn{
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+}
+.button-join{
+    background-color: rgb(80, 78, 78);
+    color:white;
+}

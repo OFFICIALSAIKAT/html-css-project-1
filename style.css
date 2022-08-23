@@ -1,92 +1,201 @@
 
-
-.navbar-container{
+*{
+    margin: 0px;
+    padding: 0px;
+   
+}
+body{
+   
+}
+nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
 }
-.list{
+.menu ul{
     display: flex;
-  
-
-   
-}
-.list-item{
-   
     list-style: none;
-    padding: 0px 10px;
-}
-.button-group{
-    display: flex;
-    flex-wrap: wrap;
-    /* position: relative;
-    margin-left: 350px;
-    margin-top: 12px; */
-
-}
-.nav-button{
-    height: 35px;
-    width: 120px;
-    margin-left: 10px;
-    border-radius: 10px;
-}
-.hero-container{
-    display: flex;
     
 }
-.image{
-    position: absolute;
-    margin-top: 10px;
-} 
-.image img{
-    width: 420px;
-    height: 450px;
-
+.menu ul li{
+    padding: 10px 20px;
+    cursor: pointer;
 }
-.square{
-    position: relative;
-    top: 100px;
-    left: 100px;
+.menu ul li:hover{
+    text-decoration: underline;
+    transition: 0.3s ease;
+   
 }
-.star{
-    position: relative;
-    top: 550px;
-    left: 50px;
+.fa-magnifying-glass{
+    padding: 10px;
 }
-.globe{
-    position: relative;
-    left: 280px;
-    height: 80px;
+.button-1{
+   height: 30px;
+   width: 110px;
+   border-radius: 10px;
 }
-.hero-container{
-    display: flex;
-    flex-wrap: wrap;
-}
-.hero-container-right{
-    display: flex;
-    flex-direction: column;
-    /* flex-wrap: wrap; */
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 50px;
-    margin:0px 145px;
-    width: 500px;
-}
-.hero-heading{
-    font-size: 50px;
-}
-.contact-heading{
-    position: relative;
-    left: 55px;
-}
-.btn{
-    height: 40px;
-    width: 120px;
-    border-radius: 20px;
+.button-email {
+    width: 190px;
+    height: 30px;
+    font-size: medium;
 }
 .button-join{
-    background-color: rgb(80, 78, 78);
-    color:white;
+    height: 30px;
+    width: 90px;
+    background: #000;
+    color: white;
+}
+.contact img{
+    margin-top: 10px;
+}
+
+@media only screen and (max-width:654px){
+    .hero{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(550px,1fr));
+        grid-gap: 1rem;
+        margin-top: 50px;
+       height: 100%;
+    
+       
+    }
+    .hero-right{
+       
+        text-align: center;
+       
+       
+    }   
+    .hero-left{
+        height: 550px;
+    }
+    .hero-left img{
+        height: 500px;
+        width: 500px;
+    }
+    .square{
+        position: absolute;
+        top: 200px;
+        left: 90px;
+        z-index: -1;
+      
+    }
+    
+}
+
+@media only screen and (min-width:655px) and (max-width:762px){
+    .hero{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(550px,1fr));
+        grid-gap: 1rem;
+        margin-top: 50px;
+       height: 100%;
+    
+       
+    }
+    .hero-right{
+       
+        text-align: center;
+        padding: 30px 5px 0px 5px;
+       
+       
+    }   
+    .hero-left{
+        height: 550px;
+    }
+    .hero-left img{
+        height: 500px;
+        width: 500px;
+    }
+    .square{
+        position: absolute;
+        top: 200px;
+        left: 90px;
+        z-index: -1;
+      
+    }
+}
+
+@media only screen and (min-width:763px) and (max-width:1024px){
+    
+    .hero{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(480px,1fr));
+        margin-top: 50px;
+        height: 100%;
+    
+       
+    }
+    .hero-right{
+        text-align: center;
+        padding: 80px 5px 0px 5px;
+       
+       
+    }   
+    
+    .hero-left img{
+        height: 600px;
+        width: 800px;
+    }
+    .square{
+        position: absolute;
+        top: 150px;
+        left: 50px;
+        z-index: -1;
+      
+    }
+}
+
+@media only screen and (min-width:1024px){
+
+    body{
+        padding: 50px;
+    }
+
+    .hero{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(550px,1fr));
+        grid-gap: 1rem;
+        margin-top: 50px;
+       height: 100%;
+    
+       
+    }
+    .hero-right{
+       
+        text-align: center;
+        padding: 100px 30px 0px 30px;
+       
+    }   
+    .hero-left{
+        height: 550px;
+    }
+    .hero-left img{
+        height: 500px;
+        width: 500px;
+    }
+    .square{
+        position: absolute;
+        top: 250px;
+        left: 110px;
+        z-index: -1;
+      
+    }
+   
+    .contact{
+        padding: 15px 0px;
+
+    }
+    .hero-right-heading{
+        padding: 15px 0px;
+        font-size: 2.2rem;
+    }
+    .hero-button{
+        padding: 15px 0px;
+        
+    }
+    .hero-right-paragraph{
+        padding: 15px 0px;
+        font-size: 1.5rem;
+    }
+   
 }
